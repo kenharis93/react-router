@@ -12,7 +12,7 @@ const Tasks = () => {
       }
     };
     axios
-      .get('http://localhost:5000/api/tasks', config)
+      .get('https://humber-taskappken.herokuapp.com/api/tasks', config)
       .then(response => {
         setTasks(response.data);
         console.log(response.data);
